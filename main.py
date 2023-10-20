@@ -7,7 +7,7 @@ WIDTH = 720
 HEIGHT = 480
 
 
-img = cv2.imread('tv12.jpg', 2)
+img = cv2.imread('images/tv12.jpg', 2)
 cv2.imshow("original", img)
 resized = cv2.resize(img, (WIDTH, HEIGHT), interpolation=cv2.INTER_AREA)
 ret, bw_image = cv2.threshold(resized, 60, 1, cv2.THRESH_BINARY_INV)
