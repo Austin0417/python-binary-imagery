@@ -15,24 +15,29 @@ class Quadrant0(Quadrant):
     quadrant_number = 0
 
 class Quadrant1(Quadrant):
-    patterns = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0]]
+    #patterns = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0]]
+    patterns = [[255, 0, 0, 0], [0, 255, 0, 0], [0, 0, 0, 255], [0, 0, 255, 0]]
     quadrant_number = 1
 
 class Quadrant2(Quadrant):
-    patterns = [[1, 1, 0, 0], [0, 1, 0, 1], [0, 0, 1, 1], [1, 0, 1, 0]]
+    #patterns = [[1, 1, 0, 0], [0, 1, 0, 1], [0, 0, 1, 1], [1, 0, 1, 0]]
+    patterns = [[255, 255, 0, 0], [0, 255, 0, 255], [0, 0, 255, 255], [255, 0, 255, 0]]
     quadrant_number = 2
 
 class Quadrant3(Quadrant):
-    patterns = [[1, 1, 0, 1], [0, 1, 1, 1], [1, 0, 1, 1], [1, 1, 1, 0]]
+    #patterns = [[1, 1, 0, 1], [0, 1, 1, 1], [1, 0, 1, 1], [1, 1, 1, 0]]
+    patterns = [[255, 255, 0, 255], [0, 255, 255, 255], [255, 0, 255, 255], [255, 255, 255, 0]]
     quadrant_number = 3
 
 class Quadrant4(Quadrant):
-    patterns = [[1, 1, 1, 1]]
+    #patterns = [[1, 1, 1, 1]]
+    patterns = [[255, 255, 255, 255]]
     quadrant_number = 4
 
 
 class QuadrantD(Quadrant):
-    patterns = [[1, 0, 0, 1], [0, 1, 1, 0]]
+    #patterns = [[1, 0, 0, 1], [0, 1, 1, 0]]
+    patterns = [[255, 0, 0, 255], [0, 255, 255, 0]]
     quadrant_number = 5
 
 
